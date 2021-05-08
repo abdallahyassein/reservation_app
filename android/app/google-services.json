@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "718124947908",
+    "project_id": "securitysystemrasp",
+    "storage_bucket": "securitysystemrasp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:718124947908:android:a0864a8a3bbaa2181bec91",
+        "android_client_info": {
+          "package_name": "com.example.reservation_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "718124947908-629e8ijpdn19bf39j6os0v8govf6ssdm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhpmu76ytK2IfFEKEd6vKkkMjCEAzMdEg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "718124947908-629e8ijpdn19bf39j6os0v8govf6ssdm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
