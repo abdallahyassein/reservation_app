@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:reservation_app/constants/colors.dart';
-import 'package:reservation_app/services/LoginServices.dart';
 import 'package:reservation_app/utils/dimens.dart';
 import 'package:reservation_app/utils/methods_helper.dart';
 import 'package:reservation_app/widgets/login_widgets/login_widget.dart';
