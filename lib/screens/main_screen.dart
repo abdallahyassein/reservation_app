@@ -51,7 +51,7 @@ class _MainScreenState extends State<MainScreen> {
               icon: Icon(
                 Icons.add_alert,
                 size: setWidth(context, 0.08),
-                color: Colors.amber,
+                color: kDarkGreyColor,
               ),
               onPressed: () {
                 navigateTo(context, AddReservationScreen());

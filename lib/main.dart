@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:reservation_app/bloc/add_reservation/reservation_cubit.dart';
 import 'package:reservation_app/bloc/bloc_observer.dart';
 import 'package:reservation_app/bloc/user/user_cubit.dart';
 import 'package:reservation_app/screens/login_screen.dart';
@@ -17,7 +18,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
-      providers: [BlocProvider(create: (context) => UserCubit())],
+      providers: [
+        BlocProvider(create: (context) => UserCubit()),
+        BlocProvider(create: (context) => ReservationCubit()),
+      ],
       child: MaterialApp(
           title: 'Reservation App',
           theme: ThemeData(

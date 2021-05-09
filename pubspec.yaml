@@ -35,6 +35,7 @@ dependencies:
   flutter_bloc: ^7.0.0
   image_picker:
   uuid_enhanced: ^3.0.2
+  flutter_datetime_picker:
 dev_dependencies:
   flutter_test:
     sdk: flutter
