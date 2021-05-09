@@ -9,7 +9,7 @@ import 'package:reservation_app/screens/add_reservation_screen.dart';
 import 'package:reservation_app/services/ReservationServices.dart';
 import 'package:reservation_app/utils/dimens.dart';
 import 'package:reservation_app/utils/methods_helper.dart';
-import 'package:reservation_app/widgets/main_screen_widgets/observations_section.dart';
+import 'package:reservation_app/widgets/main_screen_widgets/reservations_section.dart';
 
 class MainScreen extends StatefulWidget {
   @override
@@ -22,8 +22,7 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     UserModel user = UserCubit.get(context).userModel;
-    // ReservationServices.addReservation(ReservationModel(
-    //     user.id, "details", "userPicUrl", Timestamp.now(), Timestamp.now()));
+
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
@@ -149,10 +148,10 @@ class _MainScreenState extends State<MainScreen> {
                     child: TabBarView(
                       physics: NeverScrollableScrollPhysics(),
                       children: [
-                        ObservationsSection(
+                        ReservationsSection(
                           today: true,
                         ),
-                        ObservationsSection(
+                        ReservationsSection(
                           today: false,
                         )
                       ],

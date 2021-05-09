@@ -22,7 +22,7 @@ class ReservationModel {
     };
   }
 
-  factory ReservationModel.fromMap(Map<String, dynamic> map) {
+  factory ReservationModel.fromMap(map) {
     return ReservationModel(
       map['userId'],
       map['details'],

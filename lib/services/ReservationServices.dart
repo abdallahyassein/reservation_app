@@ -28,4 +28,29 @@ class ReservationServices {
     print("2asdasd");
     return result;
   }
+
+  static Future getUserReservations(String userId, bool today) async {
+    List<ReservationModel> reservations = [];
+    await FirebaseFirestore.instance
+        .collection("reservations")
+        .where("userId", isEqualTo: userId)
+        .get()
+        .then((snapshots) {
+      snapshots.docs.forEach((element) {
+        ReservationModel reserv = ReservationModel.fromMap(element);
+        DateTime dateTime =
+            DateTime.parse(reserv.appointmentDate.toDate().toString());
+        if (today) {
+          if (DateTime.now().day == dateTime.day) {
+            reservations.add(reserv);
+          }
+        } else if (!today) {
+          if (DateTime.now().day != dateTime.day) {
+            reservations.add(reserv);
+          }
+        }
+      });
+    });
+    return reservations;
+  }
 }
