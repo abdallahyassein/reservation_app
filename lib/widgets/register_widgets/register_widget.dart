@@ -105,7 +105,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                           CustomButton(
                               width: getSize(context).width * 0.3,
                               height: getSize(context).height * 0.06,
-                              color: kOrangeColor,
+                              color: Color(0xffdf6e40),
                               buttonText: "Register",
                               fontSize: getSize(context).width * k18TextSize,
                               onTap: () {

@@ -40,10 +40,10 @@ class _LoginScreenState extends State<LoginScreen> {
                   'Reservation Security App',
                   style: GoogleFonts.squadaOne(
                       textStyle: Theme.of(context).textTheme.headline4,
-                      fontSize: setWidth(context, 0.1),
+                      fontSize: setWidth(context, 0.07),
                       fontWeight: FontWeight.w900,
                       fontStyle: FontStyle.italic,
-                      color: Color(0xff6A4225)),
+                      color: Color(0xffdf6e40)),
                 ),
               ),
               Container(

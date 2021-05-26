@@ -75,7 +75,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                         CustomButton(
                             width: setWidth(context, 0.3),
                             height: setHeight(context, 0.06),
-                            color: kOrangeColor,
+                            color: Color(0xffdf6e40),
                             buttonText: "Login",
                             fontSize: setWidth(context, k18TextSize),
                             onTap: () {

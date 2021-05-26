@@ -29,7 +29,7 @@ class _AddReservationScreenState extends State<AddReservationScreen> {
         backgroundColor: Colors.white,
         centerTitle: true,
         title: Text(
-          "Add Reservation",
+          "Reserve",
           style: TextStyle(
               color: kDarkGreyColor,
               fontWeight: FontWeight.bold,
@@ -80,7 +80,8 @@ class _AddReservationScreenState extends State<AddReservationScreen> {
                           decoration: InputDecoration(
                             enabledBorder: new OutlineInputBorder(
                                 borderSide: new BorderSide(color: kHintColor)),
-                            hintText: "Details",
+                            hintText:
+                                "Please add details about your reservation",
                           ),
                           onChanged: (val) {
                             ReservationCubit.get(context).setDetails(val);
@@ -189,7 +190,7 @@ class _AddReservationScreenState extends State<AddReservationScreen> {
                         width: getSize(context).width * 0.3,
                         height: getSize(context).height * 0.06,
                         color: kOrangeColor,
-                        buttonText: "Add Reservation",
+                        buttonText: "Reserve",
                         fontSize: getSize(context).width * k18TextSize,
                         onTap: () {
                           if (_formKey.currentState.validate()) {
