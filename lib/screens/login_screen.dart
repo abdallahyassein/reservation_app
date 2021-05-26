@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:reservation_app/constants/colors.dart';
 import 'package:reservation_app/utils/dimens.dart';
 import 'package:reservation_app/utils/methods_helper.dart';
@@ -31,9 +32,20 @@ class _LoginScreenState extends State<LoginScreen> {
           child: Column(
             children: [
               SizedBox(
-                height: setHeight(context, k12TextSize),
+                height: setHeight(context, 0.08),
               ),
               TopPartWithLogoWidget(),
+              Center(
+                child: Text(
+                  'Reservation Security App',
+                  style: GoogleFonts.squadaOne(
+                      textStyle: Theme.of(context).textTheme.headline4,
+                      fontSize: setWidth(context, 0.1),
+                      fontWeight: FontWeight.w900,
+                      fontStyle: FontStyle.italic,
+                      color: Color(0xff6A4225)),
+                ),
+              ),
               Container(
                 width: setWidth(context, 1),
                 height: setHeight(context, 0.8),

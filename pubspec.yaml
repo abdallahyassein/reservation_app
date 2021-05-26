@@ -36,6 +36,7 @@ dependencies:
   image_picker:
   uuid_enhanced: ^3.0.2
   flutter_datetime_picker:
+  google_fonts: 
 dev_dependencies:
   flutter_test:
     sdk: flutter
