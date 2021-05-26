@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:reservation_app/bloc/user/user_cubit.dart';
 import 'package:reservation_app/constants/colors.dart';
 import 'package:reservation_app/models/ReservationModel.dart';
@@ -31,6 +32,17 @@ class ReservationsSection extends StatelessWidget {
               } else if (snapshot.connectionState == ConnectionState.done) {
                 if (snapshot.hasData) {
                   List<ReservationModel> reservations = snapshot.data;
+                  if (reservations.isEmpty) {
+                    return Center(
+                      child: Text('No reservations right now',
+                          style: GoogleFonts.squadaOne(
+                              textStyle: Theme.of(context).textTheme.headline4,
+                              fontSize: setWidth(context, 0.07),
+                              fontWeight: FontWeight.w900,
+                              fontStyle: FontStyle.italic,
+                              color: kOrangeColor)),
+                    );
+                  }
                   return ListView.builder(
                     itemCount: reservations.length,
                     itemBuilder: (context, index) {

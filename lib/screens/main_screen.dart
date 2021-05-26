@@ -70,7 +70,7 @@ class _MainScreenState extends State<MainScreen> {
                 child: Icon(
                   Icons.person_pin,
                   size: setWidth(context, 0.3),
-                  color: Colors.amber,
+                  color: kOrangeColor,
                 ),
               ),
             ),
